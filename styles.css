@@ -74,3 +74,28 @@ a{text-decoration:none;color:inherit}
  .service-card p{font-size:10.5px}
  .arrow{left:14px}
 }
+
+/* Banner-only iteration: no refrigerator, match supplied hero reference */
+.fridge-wrap{display:none!important}
+.hero{min-height:390px;height:auto;grid-template-columns:1fr 1fr;padding:0 5.2% 24px;align-items:center;background:linear-gradient(120deg,#f4faff 0%,#eaf5ff 48%,#d9efff 100%)}
+.hero-copy{width:100%;max-width:560px;padding:0;z-index:4}
+.hero h1{font-size:clamp(50px,5.6vw,72px);line-height:.91;letter-spacing:-3.6px;font-weight:800;margin:16px 0 12px}
+.eyebrow{font-size:9px;letter-spacing:1.8px;color:#145be0;gap:13px}
+.eyebrow span{width:36px}
+.hero-copy>p{font-size:16px;line-height:1.2;color:#203969}
+.buttons{gap:13px;margin-top:17px}
+.button{font-size:11px;padding:11px 20px}
+.primary{background:linear-gradient(100deg,#1687f4,#075bd7);box-shadow:0 4px 10px #2678e536}
+.secondary{background:#ffffff80;border-color:#acd4ff}
+.quick-services{margin-top:21px}
+.quick-services>div{min-width:88px}
+.quick-services>div+div{padding-left:24px}
+.quick-services .icon{height:20px;font-size:18px}
+.quick-services p{font-size:11px;line-height:1.12}
+.hero .lime{width:340px;height:320px;right:18%;top:20px;background:radial-gradient(ellipse,#caff9c 0%,#caff9c66 38%,transparent 72%);opacity:.7}
+.hero .wave{width:850px;height:270px;right:-300px;bottom:-145px;background:linear-gradient(135deg,#d6f2ff,#87cefa 70%,#c7eeff);opacity:.65}
+.hero .wave2{width:620px;height:220px;right:-230px;bottom:-135px;background:linear-gradient(130deg,#e2f7ff,#a9ddff);opacity:.55}
+.waterline{height:22px;background:linear-gradient(180deg,#c7edff65,#8bd4ff70)}
+@media(min-width:901px){.hero{min-height:390px}.hero-copy{align-self:center}.fridge-wrap{display:none!important}}
+@media(max-width:900px) and (min-width:621px){.hero{min-height:420px;grid-template-columns:1fr 1fr}.hero h1{font-size:clamp(45px,6vw,60px)}.hero-copy>p{font-size:14px}}
+@media(max-width:620px){.hero{display:block;min-height:480px;padding:32px 5% 25px}.hero-copy{text-align:left}.eyebrow,.buttons{justify-content:flex-start}.hero h1{font-size:clamp(44px,11vw,56px);letter-spacing:-2.7px}.hero-copy>p{font-size:14px}.quick-services{justify-content:flex-start}.quick-services>div{min-width:84px}.quick-services>div+div{padding-left:16px}.hero .lime{right:0;width:250px;height:240px}.hero .wave{right:-280px}.hero .wave2{right:-280px}}
