@@ -148,3 +148,12 @@ a{text-decoration:none;color:inherit}
 
 @media(max-width:900px) and (min-width:621px){.fridge-wrap{right:-5%;top:230px;width:54%;height:330px}.fridge{height:330px}}
 @media(max-width:620px){.fridge-wrap{bottom:8px;right:-2%;width:96%;height:325px}.fridge{height:325px}}
+
+
+/* Hero alignment fix: vertically center the fridge beside the content instead of bottom-anchoring it */
+@media(min-width:901px){
+ .hero{align-items:center!important;}
+ .hero-copy{align-self:center!important;}
+ .fridge-wrap{align-items:center!important;justify-content:center!important;height:100%!important;}
+ .fridge{height:90%!important;max-height:90%!important;object-position:center center!important;transform:none!important;}
+}
