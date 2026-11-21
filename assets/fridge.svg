@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 850">
+<defs>
+ <linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5f7ff"/><stop offset=".25" stop-color="#a9dfff"/><stop offset=".58" stop-color="#6cb8ec"/><stop offset=".83" stop-color="#d4f4ff"/><stop offset="1" stop-color="#65c9f5"/></linearGradient>
+ <linearGradient id="side" x1="0" x2="1"><stop stop-color="#2d9bd4"/><stop offset="1" stop-color="#8de5ff"/></linearGradient>
+ <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff" stop-opacity=".65"/><stop offset=".4" stop-color="#fff" stop-opacity=".05"/><stop offset="1" stop-color="#fff" stop-opacity=".4"/></linearGradient>
+ <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#83f4ff"/><stop offset="1" stop-color="#20a6ff"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-20%" width="160%" height="150%"><feGaussianBlur stdDeviation="25"/></filter>
+ <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="frost"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="2" seed="3"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .07 0"/></filter>
+</defs>
+<ellipse cx="415" cy="792" rx="330" ry="45" fill="#52caff" opacity=".3" filter="url(#shadow)"/>
+<path d="M220 95 Q235 40 315 38 L545 42 Q622 56 641 126 L662 707 Q658 764 605 773 L253 771 Q196 754 196 699Z" fill="url(#body)" stroke="#e7fbff" stroke-width="9"/>
+<path d="M545 43 Q615 58 642 125 L663 705 Q657 757 608 774 L562 765 L574 117Z" fill="url(#side)" opacity=".85"/>
+<path d="M236 100 Q260 56 327 58 L537 62 Q595 78 612 137 L625 694 Q626 728 593 748 L277 747 Q230 731 226 690Z" fill="url(#shine)" opacity=".5"/>
+<path d="M226 105 Q256 61 326 59 L540 62 Q604 80 621 140" fill="none" stroke="#fff" stroke-width="8" opacity=".8"/>
+<path d="M605 86 Q633 145 636 208 L649 686 Q650 731 614 757" fill="none" stroke="#39d9ff" stroke-width="7" opacity=".9" filter="url(#glow)"/>
+<path d="M211 350 Q206 410 210 463" fill="none" stroke="#fff" stroke-width="5" opacity=".45"/>
+<path d="M222 135 Q242 82 306 76" fill="none" stroke="#fff" stroke-width="18" opacity=".3"/>
+<g filter="url(#glow)" opacity=".85"><path d="M370 210 L400 202 L430 212 L430 250 L401 259 L372 250Z" fill="#fff" opacity=".06"/></g>
+<text x="400" y="255" text-anchor="middle" font-family="Arial,sans-serif" font-size="74" font-weight="300" fill="#f5ffff" stroke="#78eaff" stroke-width="1.5" filter="url(#glow)">W</text>
+<g transform="translate(452 365)">
+ <rect width="175" height="122" rx="27" fill="#061e3b" stroke="#a8eaff" stroke-width="5"/>
+ <rect x="7" y="7" width="161" height="108" rx="22" fill="#05243f" stroke="#32cfff" stroke-width="1.5"/>
+ <text x="88" y="38" text-anchor="middle" fill="#e7f9ff" font-family="Arial" font-size="16">Digital Studio</text>
+ <text x="46" y="83" text-anchor="middle" fill="#5beaff" font-family="Arial" font-size="32">❄</text>
+ <text x="117" y="84" text-anchor="middle" fill="#5beaff" font-family="Arial" font-size="32">4°C</text>
+</g>
+<g transform="translate(290 420)"><rect x="0" y="0" width="145" height="22" rx="11" fill="#6b9fbd" stroke="#e9fbff" stroke-width="4"/><rect x="4" y="4" width="137" height="14" rx="7" fill="url(#shine)"/><path d="M14 22 Q0 38 10 45" fill="none" stroke="#fff" stroke-width="5" opacity=".6"/></g>
+<g fill="#dff8ff" stroke="#fff" stroke-width="4" opacity=".9"><path d="M114 690 L158 650 L204 674 L210 740 L165 775 L116 751Z"/><path d="M154 650 L170 695 L210 740 L165 775 L141 719Z" fill="#8bd6ff" opacity=".55"/><path d="M614 690 L656 642 L712 666 L727 731 L683 780 L629 753Z"/><path d="M656 642 L676 695 L727 731 L683 780 L643 722Z" fill="#8bd6ff" opacity=".45"/></g>
+<g fill="none" stroke="#fff" stroke-width="4" opacity=".65"><path d="M140 673 L164 705 L188 686"/><path d="M655 666 L680 700 L704 678"/></g>
+<path d="M55 785 Q175 760 290 782 T510 786 T760 776" fill="none" stroke="#9beaff" stroke-width="22" opacity=".3"/>
+</svg>
