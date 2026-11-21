@@ -145,6 +145,6 @@ a{text-decoration:none;color:inherit}
 
 /* Actual uploaded fridge image asset — tuned to reference proportions */
 .fridge-wrap{display:flex!important;overflow:visible}.fridge{width:auto;height:100%;max-width:none;object-fit:contain;filter:drop-shadow(0 25px 30px rgba(35,132,205,.2)) drop-shadow(0 0 20px rgba(67,223,255,.18));}
-@media(min-width:901px){.fridge-wrap{right:-2%;top:-8px;width:46%;height:470px}.fridge{height:470px;transform:translateY(18px)}}
+@media(min-width:901px){.fridge-wrap{right:-5%;top:-8px;width:50%;height:470px;justify-content:flex-end}.fridge{height:470px;transform:translate(0,18px)}}
 @media(max-width:900px) and (min-width:621px){.fridge-wrap{right:-5%;top:230px;width:54%;height:330px}.fridge{height:330px}}
 @media(max-width:620px){.fridge-wrap{bottom:8px;right:-2%;width:96%;height:325px}.fridge{height:325px}}
