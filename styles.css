@@ -169,3 +169,11 @@ a{text-decoration:none;color:inherit}
  .fridge-wrap{top:-5px!important;bottom:-48px!important;height:620px!important;width:59%!important;}
  .fridge{height:620px!important;transform:translateY(34px) scale(1.025)!important;transform-origin:right bottom!important;filter:drop-shadow(0 25px 30px rgba(35,132,205,.16)) drop-shadow(0 0 26px rgba(67,223,255,.24))!important;}
 }
+
+/* DESKTOP EXPERIMENT: fridge emerges halfway from the icy water; crop side ice */
+@media(min-width:901px){
+ .hero{overflow:hidden!important;}
+ .fridge-wrap{top:0!important;right:-1.5%!important;bottom:0!important;width:59%!important;height:100%!important;overflow:hidden!important;align-items:flex-end!important;justify-content:flex-end!important;}
+ .fridge{height:760px!important;width:auto!important;max-height:none!important;max-width:none!important;transform:translateY(285px) scale(1.06)!important;transform-origin:right bottom!important;object-fit:contain!important;}
+ .waterline{position:absolute!important;bottom:0!important;left:0!important;width:100%!important;height:42px!important;z-index:4!important;}
+}
