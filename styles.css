@@ -177,3 +177,13 @@ a{text-decoration:none;color:inherit}
  .fridge{height:760px!important;width:auto!important;max-height:none!important;max-width:none!important;transform:translateY(285px) scale(1.06)!important;transform-origin:right bottom!important;object-fit:contain!important;}
  .waterline{position:absolute!important;bottom:0!important;left:0!important;width:100%!important;height:42px!important;z-index:4!important;}
 }
+
+
+/* Desktop hero ice cubes — visual layer only; leave fridge placement untouched */
+@media (min-width: 901px){
+  .hero .ice-cube{position:absolute;bottom:5px;pointer-events:none;z-index:3;filter:drop-shadow(0 8px 12px #2e9ddc35);opacity:.88}
+  .hero .ice-cube svg{display:block;width:100%;height:auto}
+  .hero .ice-cube-left{left:42%;width:122px;bottom:1px;opacity:.72;z-index:1;transform:rotate(-8deg)}
+  .hero .ice-cube-right{right:4.2%;width:158px;bottom:0;opacity:.88;transform:rotate(7deg)}
+  .hero .ice-cube:after{content:"";position:absolute;left:18%;right:12%;bottom:1px;height:12px;border-radius:50%;background:#73d5ff55;filter:blur(8px)}
+}
