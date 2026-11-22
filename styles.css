@@ -143,32 +143,29 @@ a{text-decoration:none;color:inherit}
 @media(max-width:900px) and (min-width:621px){.hero{min-height:560px;grid-template-columns:1fr}.hero-copy{max-width:540px}.fridge-wrap{display:flex!important;top:225px;right:-5%;width:60%;height:350px;z-index:2}.fridge{height:100%;max-width:100%;filter:drop-shadow(0 18px 28px rgba(30,128,211,.28))}.hero .lime{right:12%;top:220px}.hero .wave{right:-260px;bottom:-145px}.hero .wave2{right:-230px;bottom:-120px}}
 @media(max-width:620px){.hero{min-height:690px;padding-bottom:330px;position:relative}.fridge-wrap{display:flex!important;top:auto;bottom:8px;right:-6%;width:100%;height:335px;align-items:center;justify-content:center;z-index:2}.fridge{height:100%;max-width:100%;filter:drop-shadow(0 18px 26px rgba(30,128,211,.25))}.hero .lime{right:8%;top:auto;bottom:180px;width:260px;height:220px}.hero .wave{right:-270px;bottom:-150px}.hero .wave2{right:-260px;bottom:-120px}.waterline{height:18px}}
 
-/* Actual uploaded fridge image asset — tuned to reference proportions */
-.fridge-wrap{display:flex!important;overflow:visible}.fridge{width:auto;height:100%;max-width:none;object-fit:contain;filter:drop-shadow(0 25px 30px rgba(35,132,205,.2)) drop-shadow(0 0 20px rgba(67,223,255,.18));}
 
-@media(max-width:900px) and (min-width:621px){.fridge-wrap{right:-5%;top:230px;width:54%;height:330px}.fridge{height:330px}}
-@media(max-width:620px){.fridge-wrap{bottom:8px;right:-2%;width:96%;height:325px}.fridge{height:325px}}
-
-
-/* Hero alignment fix: vertically center the fridge beside the content instead of bottom-anchoring it */
+/* CLEAN HERO LAYOUT: desktop composition first, responsive layouts below */
 @media(min-width:901px){
- .hero{align-items:center!important;}
- .hero-copy{align-self:center!important;}
- .fridge-wrap{align-items:center!important;justify-content:center!important;height:100%!important;}
- .fridge{height:90%!important;max-height:90%!important;object-position:center center!important;transform:none!important;}
+ .hero{height:520px!important;min-height:520px!important;max-height:520px!important;display:grid!important;grid-template-columns:45% 55%!important;align-items:center!important;padding:0 4.5% 20px!important;overflow:hidden!important;}
+ .hero-copy{position:relative!important;align-self:center!important;padding:0!important;margin:0!important;max-width:620px!important;z-index:5!important;}
+ .fridge-wrap{position:relative!important;inset:auto!important;width:100%!important;height:100%!important;min-height:0!important;max-height:100%!important;display:flex!important;align-items:flex-end!important;justify-content:flex-end!important;overflow:visible!important;z-index:2!important;}
+ .fridge{display:block!important;height:100%!important;width:auto!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:right bottom!important;transform:none!important;}
+ .hero .lime{right:24%!important;top:10px!important;width:390px!important;height:340px!important;}
+ .hero .wave{right:-250px!important;bottom:-155px!important;}
+ .hero .wave2{right:-240px!important;bottom:-125px!important;}
+ .waterline{height:23px!important;}
 }
-
-/* Footer-only update: clean editorial multi-column layout */
-.site-footer{padding:48px 5% 30px;color:#203c68;background:rgba(245,250,255,.72);border-top:1px solid rgba(119,171,218,.22)}
-.footer-top{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:38px;padding:0 0 38px;position:relative;z-index:2}
-.footer-brand-block .brand{font-size:21px}
-.footer-brand-block p{font-size:14px;line-height:1.55;color:#42628c;margin:18px 0 22px}
-.footer-email{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;color:#1267d8;border-bottom:1px solid #9ccaff;padding-bottom:5px}
-.footer-column{display:flex;flex-direction:column;gap:12px;font-size:13px}
-.footer-column a{color:#284b7a;transition:color .2s}
-.footer-column a:hover{color:#0878ed}
-.footer-heading{font-size:11px;letter-spacing:1.1px;text-transform:uppercase;color:#8aa2bf;margin-bottom:7px;font-weight:800}
-.footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:15px;border-top:1px solid rgba(124,174,219,.28);padding-top:18px;color:#8098b5;font-size:11px}
-.footer-bottom a{color:#6686aa}
-@media(max-width:700px){.site-footer{padding:32px 5% 24px}.footer-top{grid-template-columns:1fr 1fr;gap:28px 20px;padding-bottom:28px}.footer-brand-block{grid-column:1/-1}.footer-brand-block p{margin:14px 0}.footer-bottom{font-size:10px;flex-wrap:wrap}.footer-bottom span:nth-child(2){display:none}}
-@media(max-width:400px){.footer-top{gap:24px 14px}.footer-column{font-size:12px}.footer-brand-block .brand{font-size:17px}}
+@media(max-width:900px) and (min-width:621px){
+ .hero{height:600px!important;min-height:600px!important;max-height:none!important;display:block!important;padding:32px 6% 0!important;}
+ .hero-copy{text-align:center!important;max-width:540px!important;margin:0 auto!important;padding:0!important;}
+ .eyebrow,.buttons{justify-content:center!important;}
+ .fridge-wrap{position:absolute!important;right:0!important;bottom:0!important;top:auto!important;width:58%!important;height:350px!important;display:flex!important;align-items:flex-end!important;justify-content:flex-end!important;}
+ .fridge{height:100%!important;width:auto!important;max-height:100%!important;object-fit:contain!important;}
+}
+@media(max-width:620px){
+ .hero{height:auto!important;min-height:610px!important;max-height:none!important;display:block!important;padding:34px 5% 330px!important;}
+ .hero-copy{text-align:left!important;padding:0!important;}
+ .eyebrow,.buttons{justify-content:flex-start!important;}
+ .fridge-wrap{position:absolute!important;right:-2%!important;bottom:5px!important;top:auto!important;width:100%!important;height:325px!important;display:flex!important;align-items:flex-end!important;justify-content:center!important;}
+ .fridge{height:100%!important;width:auto!important;max-width:100%!important;object-fit:contain!important;}
+}
