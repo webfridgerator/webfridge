@@ -177,12 +177,3 @@ a{text-decoration:none;color:inherit}
  .fridge{height:760px!important;width:auto!important;max-height:none!important;max-width:none!important;transform:translateY(285px) scale(1.06)!important;transform-origin:right bottom!important;object-fit:contain!important;}
  .waterline{position:absolute!important;bottom:0!important;left:0!important;width:100%!important;height:42px!important;z-index:4!important;}
 }
-
-/* Decorative ice cubes: desktop foreground, fridge placement remains unchanged */
-@media(min-width:901px){
- .hero-ice{position:absolute;left:0;right:0;bottom:8px;height:155px;pointer-events:none;z-index:3;}
- .hero-ice .ice{position:absolute;display:block;filter:drop-shadow(0 8px 15px rgba(54,160,224,.18));}
- .ice-left{width:140px;height:120px;left:43%;bottom:0;transform:rotate(-7deg);}
- .ice-right{width:175px;height:145px;right:4%;bottom:0;transform:rotate(8deg);}
- .waterline{z-index:4!important;}
-}
